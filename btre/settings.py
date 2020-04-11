@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'listings',
     'realtors',
     'accounts',
+    'contacts',
 ]
 
 MIDDLEWARE = [
@@ -142,3 +143,10 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR : 'danger'
 }
+
+#Email
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'kaushikpankaj78@gmail.com'
+EMAIL_HOST_PASSWORD = 'fszdjtxosytrmnib'
+EMAIL_USE_TLS = True
