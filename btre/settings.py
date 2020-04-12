@@ -25,7 +25,7 @@ SECRET_KEY = 'v@1rd$eei+f4uqv!b*rf)427c2$if*9m1tjz8g$(ey@@c4)&m#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://btrealestate-pk.herokuapp.com/']
+ALLOWED_HOSTS = ['https://btrealestate-pk.herokuapp.com/', '127.0.0.1']
 
 
 # Application definition
@@ -147,6 +147,6 @@ MESSAGE_TAGS = {
 #Email
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = os.environ.get.('EMAIL_USER')
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
 EMAIL_HOST_PASSWORD = 'fszdjtxosytrmnib'
 EMAIL_USE_TLS = True
