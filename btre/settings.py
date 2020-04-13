@@ -29,6 +29,7 @@ SECRET_KEY = os.environ.get('BTRE_SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['btrealestate-pk.herokuapp.com']
+# ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition

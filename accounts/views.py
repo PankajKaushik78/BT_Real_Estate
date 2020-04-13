@@ -41,6 +41,10 @@ def register(request):
         #validation
         #password check
         if password == password2:
+            if len(password) < 6:
+                messages.error(request, "Password is too short")
+                return redirect('register')
+
             #username check
             if User.objects.filter(username=username).exists():
                 messages.error(request, "This username is already taken")
